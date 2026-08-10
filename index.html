@@ -26,23 +26,54 @@
     align-items: center;
     padding: 40px 20px 60px;
   }
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-link {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.logo-wrap img {
+  display: block;
+  width: auto;
+  height: 90px;
+}
+
+h1.title {
+  margin: 0;
+  font-family: 'Jersey 10', sans-serif;
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+  color: var(--accent);
+  line-height: 1;
+}
+
+@media (max-width: 520px) {
   .logo-wrap {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 8px;
+    gap: 10px;
   }
+
   .logo-wrap img {
-    height: 90px;
-    width: auto;
+    height: 60px;
   }
+
   h1.title {
-    font-family: 'Jersey 10', sans-serif;
-    font-size: 3.2rem;
-    letter-spacing: 2px;
-    color: var(--accent);
-    margin: 4px 0 0;
-    text-align: center;
+    font-size: 2.2rem;
   }
+}
   h2.subtitle {
     font-family: 'Jersey 25', sans-serif;
     font-size: 1.6rem;
@@ -79,6 +110,7 @@
     color: var(--accent);
     text-decoration: none;
   }
+    
   .card a:hover { text-decoration: underline; }
   ul { padding-left: 18px; margin: 0; }
   footer {
@@ -91,43 +123,20 @@
 </style>
 </head>
 <body>
-
-  <div class="logo-wrap">
-    <img src="landing_page_logo.png" alt="MIDI MACHINE logo">
-  </div>
-  <h1 class="title">MIDI MACHINE</h1>
-  <h2 class="subtitle">Support &amp; FAQ</h2>
-
-  <div class="container">
-
-    <div class="card">
-      <h3>CONTACT</h3>
-      <p>Need help, want to report a bug or have questions regarding data protection,? Reach out anytime — we usually reply within 1–2 business days.</p>
-      <p>Email: <a href="mailto:support@3ksidequests.com">3ksidequests@gmail.com</a></p>
+<br><br><br><br><br><br><br><br><br><br>
+  <div class="logo-container">
+  <a class="logo-link" href="midimachine/index.html">
+    <div class="logo-wrap">
+      <img
+        src="midimachine/landing_page_logo.png"
+        alt="MIDI MACHINE logo"
+      >
+      <h1 class="title">MIDI MACHINE</h1>
     </div>
-    
-    <div class="card">
-      <h3>DATA PROTECTION</h3>
-      <p>MIDI MACHINE is designed with privacy in mind. We do not collect, store, or share any personal data, MIDI content, or usage analytics from your device.</p>
-      <ul>
-        <li>No account creation or personal information is required to use the app.</li>
-        <li>All MIDI generation, editing, and playback happens locally on your device.</li>
-        <li>No third-party tracking, advertising SDKs, or analytics services are integrated.</li>
-        <li>If you contact support via email, we only use your message and email address to respond to your inquiry.</li>
-      </ul>
-    </div>
-    
-    <div class="card">
-      <h3>TROUBLESHOOTING</h3>
-      <ul>
-        <li><a href="docs/MIDI_MACHINE_Windows_Setup_Troubleshooting_Guide.pdf" target="_blank">Windows Setup Troubleshooting Guide.pdf</a></li>
-      </ul>
-    </div>
-
-
-  </div>
-
-  <footer>MIDI MACHINE — © 2026 NIKKI3K</footer>
+  </a>
+</div>
+  <br><br><br><br><br><br><br><br><br><br>
+  <footer>3K SIDEQUESTS — © 2026 NIKKI3K</footer>
 
 </body>
 </html>
